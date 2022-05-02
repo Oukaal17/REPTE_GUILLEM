@@ -1,8 +1,9 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+<<<<<<< HEAD
 header{
     display:block;
     position:relative;
@@ -19,3 +20,16 @@ section{
     height:auto;
 }
 
+=======
+header {}
+
+.imgmapa {
+    width: 95%;
+    height: 95%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+>>>>>>> d4315cef4c93231f4c0cdb188f49601a4bfbcb9b
