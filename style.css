@@ -64,12 +64,22 @@ section {
     opacity: 0.5;
   }
 
-.imgmapa {
-    width: 95%;
-    height: 95%;
-}
-
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.privacitat {
+    width: 90%;
+    height: auto;
+}
+
+.contacte {
+    width: 1000px;
+}
+
+.googlemaps {
+    margin: 20px;
+    width: 200%;
 }
