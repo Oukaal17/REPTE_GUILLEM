@@ -3,19 +3,29 @@
     padding: 0;
 }
 
-header{
-    display:block;
-    position:relative;
-    background-color:rosybrown;
-    width:100vw;
-    height:120px;
-}
-section{
-    display:block;
-    position:relative;
-    margin:0 auto;
-    background-color:wheat;
-    width:75vw;
-    height:auto;
+header {
+    display: block;
+    position: relative;
+    background-color: rosybrown;
+    width: 100vw;
+    height: 120px;
 }
 
+section {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-color: wheat;
+    width: 75vw;
+    height: auto;
+}
+
+.imgmapa {
+    width: 95%;
+    height: 95%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
