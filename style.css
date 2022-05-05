@@ -20,12 +20,29 @@ section {
     height: auto;
 }
 
-.imgmapa {
-    width: 95%;
-    height: 95%;
-}
-
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.imgmapa {
+    width: auto;
+    height: 100%;
+}
+
+.privacitat {
+    width: 90%;
+    height: auto;
+}
+
+.maps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.contacte {
+    width: 1000px;
 }
