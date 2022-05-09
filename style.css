@@ -18,56 +18,60 @@ section {
     background-color: wheat;
     width: 75svw;
     height: auto;
-    justify-content:center;
+    justify-content: center;
 }
-.topnav{
+
+.topnav {
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
-.container{
-    display:block;
-    position:relative;
-    width:60vw;
-    margin:0 auto;
+
+.container {
+    display: block;
+    position: relative;
+    width: 60vw;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
-  }
+}
 
-  .slider-inner{
+.slider-inner {
     position: relative;
-    width:58vw;
-    height:auto;
-    position:relative;
+    width: 58vw;
+    height: auto;
+    position: relative;
+}
 
-  }
-
-  .slider-inner img{
-    display:none;
-    width:500px;
-    height:300px;
+.slider-inner img {
+    display: none;
+    width: 500px;
+    height: 300px;
     border: solid 2px;
     border-radius: 20px;
-  }
+}
 
-  .slider-inner img.active{
-    display:inline-block;
-  }
+.slider-inner img.active {
+    display: inline-block;
+}
 
-  .prev,.next{
-    position:relative;
-    cursor:pointer;
+.prev,
+.next {
+    position: relative;
+    cursor: pointer;
     margin-top: 20px;
-    z-index:100;
-  }
-  .prev:hover,.next:hover{
+    z-index: 100;
+}
+
+.prev:hover,
+.next:hover {
     opacity: 0.5;
-  }
+}
 
 footer {
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
+    align-items: center;
+    height: 200px;
 }
 
 .privacitat {
