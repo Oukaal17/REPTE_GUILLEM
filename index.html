@@ -11,21 +11,21 @@
     <script type="text/javascript">
         $(document).ready(function(){
           $('.next').on('click', function(){
-            var imatgeActual = $('.active');
+            var imatgeActual = $('.active1');
             var imatgeSeguent = imatgeActual.next();
   
             if(imatgeSeguent.length > 0){
-              imatgeActual.removeClass('active').css('z-index', -10);
-              imatgeSeguent.addClass('active').css('z-index', 10);
+              imatgeActual.removeClass('active1').css('z-index', -10);
+              imatgeSeguent.addClass('active1').css('z-index', 10);
             }
           });
           $('.prev').on('click', function(){
-            var imatgeActual = $('.active');
+            var imatgeActual = $('.active1');
             var imatgeAnterior = imatgeActual.prev();
   
             if(imatgeAnterior.length > 0){
-              imatgeActual.removeClass('active').css('z-index', -10);
-              imatgeAnterior.addClass('active').css('z-index', 10);
+              imatgeActual.removeClass('active1').css('z-index', -10);
+              imatgeAnterior.addClass('active1').css('z-index', 10);
             };
   
           })
