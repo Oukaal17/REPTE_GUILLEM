@@ -108,6 +108,10 @@ footer {
     width: 1000px;
 }
 
+.contacte ul li {
+    padding: 10px;
+}
+
 li {
     list-style: none;
 }
