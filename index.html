@@ -13,15 +13,21 @@
 
 <body>
     <header>
-        <div id="logo">Hola</div>
-        <div id="login"></div>
+        <div class="logo">
+            <img class="imgLogo" src="./Logo.png" alt="MOA, SL">
+        </div>
+        <div id="login">
+            <button class="btLogin">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
     <section>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <input type="text" placeholder="Search..">
+            <input class="Search" type="text" placeholder="Search..">
         </div>
         <div class="container">
             <div class="slider-outer">
@@ -37,10 +43,7 @@
                 <img src="images/next.png" class="next" id="seg" alt="Next">
             </div>
         </div>
-
-
     </section>
-    </div>
     </section>
     <footer>
         <div class="privacitat">
@@ -51,10 +54,12 @@
             width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="contacte">
             <ul>
-                <li>Nom de la botiga</li>
-                <li>Telèfon de contacte</li>
-                <li>Email de contacte</li>
-                <li>APi de contacte (possible Whatsapp)</li>
+                <li>MOA, SL</li>
+                <li>628469395</li>
+                <li class="email">moashop@moa.com</li>
+                <a href="https://api.whatsapp.com/send?phone=628469395" target="blank">
+                    <button class="btWhatsapp "> <i class="fa-brands fa-whatsapp "></i> Whatsapp</button>
+                </a>
             </ul>
         </div>
     </footer>
