@@ -9,28 +9,28 @@
     <script src="https://kit.fontawesome.com/5a29a99d2a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-          $('.next').on('click', function(){
-            var imatgeActual = $('.active');
-            var imatgeSeguent = imatgeActual.next();
-  
-            if(imatgeSeguent.length > 0){
-              imatgeActual.removeClass('active').css('z-index', -10);
-              imatgeSeguent.addClass('active').css('z-index', 10);
-            }
-          });
-          $('.prev').on('click', function(){
-            var imatgeActual = $('.active');
-            var imatgeAnterior = imatgeActual.prev();
-  
-            if(imatgeAnterior.length > 0){
-              imatgeActual.removeClass('active').css('z-index', -10);
-              imatgeAnterior.addClass('active').css('z-index', 10);
-            };
-  
-          })
-        });  
-      </script>    
+        $(document).ready(function() {
+            $('.next').on('click', function() {
+                var imatgeActual = $('.active');
+                var imatgeSeguent = imatgeActual.next();
+
+                if (imatgeSeguent.length > 0) {
+                    imatgeActual.removeClass('active').css('z-index', -10);
+                    imatgeSeguent.addClass('active').css('z-index', 10);
+                }
+            });
+            $('.prev').on('click', function() {
+                var imatgeActual = $('.active');
+                var imatgeAnterior = imatgeActual.prev();
+
+                if (imatgeAnterior.length > 0) {
+                    imatgeActual.removeClass('active').css('z-index', -10);
+                    imatgeAnterior.addClass('active').css('z-index', 10);
+                };
+
+            })
+        });
+    </script>
     <script src="scripts/shop.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -81,7 +81,7 @@
                 <li>MOA, SL</li>
                 <li>628469395</li>
                 <li class="email">moashop@moa.com</li>
-                <a href="https://api.whatsapp.com/send?phone=628469395" target="blank">
+                <a href="https://api.whatsapp.com/send?phone=34628469395" target="blank">
                     <button class="btWhatsapp "> <i class="fa-brands fa-whatsapp "></i> Whatsapp</button>
                 </a>
             </ul>
