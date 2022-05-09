@@ -17,7 +17,7 @@ section {
     margin: 0 auto;
     background-color: wheat;
     width: 75svw;
-    height: auto;
+    height: 50%;
     justify-content: center;
 }
 
@@ -71,7 +71,10 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 200px;
+    height: 30%;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
 }
 
 .privacitat {
@@ -81,6 +84,19 @@ footer {
 
 .contacte {
     width: 1000px;
+}
+
+li {
+    list-style: none;
+}
+
+.btWhatsapp {
+    padding: 5px 25px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    margin: 10px;
+    background-color: green;
+    border: groove;
 }
 
 .googlemaps {
