@@ -46,8 +46,8 @@ section {
     display:none;
     width:500px;
     height:300px;
-    border: solid 2px;
-    border-radius: 20px;
+    border: solid 1px;
+    border-radius: 60px;
   }
 
   .slider-inner img.active{
