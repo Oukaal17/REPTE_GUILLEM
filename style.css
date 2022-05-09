@@ -24,11 +24,6 @@ header {
     margin-bottom: 20px;
 }
 
-.invertir-color {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-
 .imgLogo:hover {
     cursor: pointer;
 }
