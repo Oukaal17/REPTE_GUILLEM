@@ -31,6 +31,8 @@ header {
 
 #login {
     margin: 35px;
+    border-radius: 80px;
+    border: 1px solid black;
 }
 
 .btLogin:hover {
@@ -55,7 +57,7 @@ section {
 .topnav {
     margin-top: 1px;
     margin-bottom: 20px;
-    /* background-color: aqua; */
+    background-color: lightseagreen;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-evenly;
