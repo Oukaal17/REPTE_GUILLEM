@@ -10,7 +10,6 @@ header {
     position: relative;
     background-color: lightcyan;
     width: 100vw;
-    height: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,7 +49,7 @@ section {
     margin: 0 auto;
     /* background-color: wheat; */
     width: 100vw;
-    height: 50%;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -64,6 +63,7 @@ section {
     align-items: center;
     padding: 10px;
     width: 100vw;
+    height: 50px;
 }
 
 .Search {
@@ -86,15 +86,14 @@ section {
     position: relative;
 }
 
-  
-
-  .slider-inner img{
-    display:none;
-    width:500px;
-    height:300px;
+.slider-inner img {
+    display: none;
+    width: 500px;
+    height: 300px;
     border: solid 1px;
     border-radius: 60px;
-  }
+}
+
 .slider-inner img {
     display: none;
     width: 500px;
@@ -125,7 +124,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 30%;
+    height: 223px;
     background-color: black;
     color: white;
     font-size: 1.3rem;
