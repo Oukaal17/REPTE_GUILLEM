@@ -12,6 +12,7 @@ header {
     width: 100vw;
     justify-content: space-between;
     align-items: center;
+    height: 20vh;
 }
 
 .imgLogo {
@@ -179,4 +180,11 @@ li {
 .googlemaps {
     margin: 20px;
     width: 200%;
+}
+
+@media only screen and (max-width: 852px) {
+    footer {
+        font-size: 1rem;
+        background-color: white;
+    }
 }

@@ -1,36 +1,27 @@
 <?php
+$servername= "localhost";
+$username = "root";
+$password = "";
+$dbname = "botiga";
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass ="";
-$dbname ="test";
+$conn = new mysqli($servername, $username,$password,$dbname);
 
-$conn = mysqli_connect($dbhost, $dbuser,$dbpass,$dbname);
-if (!$conn)
-{
-    die("No tenim conexio:".mysqli_connect_error());
-}
-$nombre = $_POST["txtusuaio"];
-$pass = $_POST["txtpassword"];
+if(isset($_POST['username'])){
+$uname=$_POST['username'];
+$password=$_POST['password'];
+$sql="select * from login from where User='".$uname."' AND Pass='".$password."' limit 1";
+$result=$conn->query($sql);
 
-$query = mysqli_query($conn,"SELECT * FROM login WHERE usuario ='".$nombre"' and password = '".$pass"'" );
-$nr = mysqli_num_rows($query);
-
-if($nr == i)
-{
-    //header("Location: pagina.html"
-    echo "Bienvenido:" .$nombre;
-
-}
-else if ($nr == 0)
-{
-    echo: "Cap Ingress";
+if($result->num_rows==1){
+    $conn->close();
+    header("Location: main_page.php");
+    exit;
 }
 
-
-
-
-
-
-
+else{
+    
+    ?><div id="logincorrecta" style="display:flex;position:absolute;width:300px;height:40px;background:blue"
+    exit();
+}
+}
 ?>
