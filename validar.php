@@ -18,7 +18,7 @@ if($filas){
     <?php
     include("index.php");
     ?>
-    <h1 class="bad"> ERRO LOGIN </h1>
+    <h1 class="bad"> ERROR LOGIN </h1>
     <?php
 }
 
