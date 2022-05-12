@@ -130,6 +130,16 @@ footer {
     color: white;
     font-size: 1.3rem;
 }
+dades {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
 
 .privacitat {
     width: 90%;
