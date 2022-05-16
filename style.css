@@ -60,6 +60,7 @@ section2 {
     display: grid;
     position: relative;
     margin: 0 auto;
+    margin-bottom:20px;
     /* background-color: wheat; */
     width: 100vw;
     height: auto;
@@ -155,6 +156,7 @@ section2 {
     height: auto;
     width: 90vw;
     background-color:rosybrown;
+    margin-bottom: 20px;
 }
 
 footer {
