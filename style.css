@@ -153,9 +153,10 @@ section2 {
     margin:0 auto;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:auto;
+    grid-row-gap:10px;
+    grid-column-gap:10px;
     height: auto;
     width: 90vw;
-    background-color:rosybrown;
     margin-bottom: 20px;
     margin-top: -270px;
 }
@@ -163,10 +164,16 @@ section2 {
 .compra{
     display: block;
     position:relative;
+    height:auto;
+    background-position:center;
+    background-size: 120%;
+    background-repeat:no-repeat;
+    transition:all 300ms ease;
 
 }
 .compra:hover{
     opacity:0.5;
+    cursor: pointer;
 }
 
 footer {
