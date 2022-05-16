@@ -223,6 +223,10 @@ li {
     color: blue;
 }
 
+.carrito {
+    margin-left: 70%;
+}
+
 .btWhatsapp {
     padding: 5px 25px;
     border-radius: 50px;
