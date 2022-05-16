@@ -1,54 +1,49 @@
-<?php 
+<?php
 
-$host="localhost";
-$user="root";
-$password="";
-$db="demo";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "demo";
 
-mysql_connect($host,$user,$password);
-mysql_select_db($db);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 if(isset($_POST['username'])){
-    
-    $uname=$_POST['username'];
-    $password=$_POST['password'];
-    
-    $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
-    
-    $result=mysql_query($sql);
-    
-    if(mysql_num_rows($result)==1){
-        echo " You Have Successfully Logged in";
-        exit();
-    }
-    else{
-        echo " You Have Entered Incorrect Password";
-        exit();
-    }
-        
+  $uname=$_POST['username'];
+  $password=$_POST['password'];
+  $sql="select * from loginfrom where User='".$uname."'AND Pass='".$password."' limit 1";
+  $result=$conn->query($sql);
+
+
+  if($result->num_rows==1){
+    $conn->close();
+    header("Location: index.html");
+    exit;
+  }
+  else{
+    ?><div id="loginincorrecte" style="display:flex;position:absolute;width:300px;height:40px;background-color:#E5A3A4;align-items:center;justify-content:center;border-radius:50px;color:red;font-size:1.5rem;top:66%;left:50vw;transform:translate(-50%,-50%);">Login Incorrecte</div><?php
+    exit();
+  }
 }
+
 ?>
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> Login Form in HTML5 and CSS3</title>
-	<link rel="stylesheet" a href="css\style1.css">
-	<link rel="stylesheet" a href="css\font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
 <body>
-	<div class="container">
-	<img src="image/Logo.png"/>
-		<form method="POST" action="#">
-			<div class="form-input">
-				<input type="text" name="text" placeholder="Enter the User Name"/>	
-			</div>
-			<div class="form-input">
-				<input type="password" name="password" placeholder="ENTER Your Password"/>
-			</div>
-			<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
-		</form>
-	</div>
+    <from action="validar.php" method="post">
+    <h1> Sistema de Login</h1>
+    <p> Usuari <input type="text" placeholder="Ingresa el Nom" name="usuari"></p>
+    <p> Contrasenya <input type="password" placeholder="ingresa la contrasenya" name="contrasenya"></p>
+    <input type="submit" value="Ingresar">
+    
+
+</from>    
 </body>
 </html>
