@@ -157,6 +157,16 @@ section2 {
     width: 90vw;
     background-color:rosybrown;
     margin-bottom: 20px;
+    margin-top: -270px;
+}
+
+.compra{
+    display: block;
+    position:relative;
+
+}
+.compra:hover{
+    opacity:0.5;
 }
 
 footer {
