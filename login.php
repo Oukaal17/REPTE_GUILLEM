@@ -1,27 +1,54 @@
-<?php
-$servername= "localhost";
-$username = "root";
-$password = "";
-$dbname = "botiga";
+<?php 
 
-$conn = new mysqli($servername, $username,$password,$dbname);
+$host="localhost";
+$user="root";
+$password="";
+$db="demo";
+
+mysql_connect($host,$user,$password);
+mysql_select_db($db);
 
 if(isset($_POST['username'])){
-$uname=$_POST['username'];
-$password=$_POST['password'];
-$sql="select * from login from where User='".$uname."' AND Pass='".$password."' limit 1";
-$result=$conn->query($sql);
-
-if($result->num_rows==1){
-    $conn->close();
-    header("Location: main_page.php");
-    exit;
-}
-
-else{
     
-    ?><div id="logincorrecta" style="display:flex;position:absolute;width:300px;height:40px;background:blue"
-    exit();
-}
+    $uname=$_POST['username'];
+    $password=$_POST['password'];
+    
+    $sql="select * from loginform where user='".$uname."'AND Pass='".$password."' limit 1";
+    
+    $result=mysql_query($sql);
+    
+    if(mysql_num_rows($result)==1){
+        echo " You Have Successfully Logged in";
+        exit();
+    }
+    else{
+        echo " You Have Entered Incorrect Password";
+        exit();
+    }
+        
 }
 ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login Form in HTML5 and CSS3</title>
+	<link rel="stylesheet" a href="css\style1.css">
+	<link rel="stylesheet" a href="css\font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+	<img src="image/Logo.png"/>
+		<form method="POST" action="#">
+			<div class="form-input">
+				<input type="text" name="text" placeholder="Enter the User Name"/>	
+			</div>
+			<div class="form-input">
+				<input type="password" name="password" placeholder="ENTER Your Password"/>
+			</div>
+			<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
+		</form>
+	</div>
+</body>
+</html>
