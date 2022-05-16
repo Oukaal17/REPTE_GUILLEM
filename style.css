@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Happy+Monkey&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Happy Monkey', cursive;
 }
 
 header {
@@ -12,7 +15,7 @@ header {
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 25vh;
 }
 
 .imgLogo {
@@ -53,7 +56,30 @@ section {
     height: 100vh;
     justify-content: center;
 }
+section2 {
+    display: grid;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom:20px;
+    /* background-color: wheat; */
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+}
+.img-thumbnail{
+    display:block;
+    position:relative;
+    background-position:center;
+    background-size: 100%;
+    background-repeat:no-repeat;
+  }
 
+.fotosCompra{
+    display:block;
+    position:relative;
+    width: auto;
+    height: auto;
+}
 .topnav {
     margin-top: 1px;
     margin-bottom: 20px;
@@ -65,6 +91,7 @@ section {
     padding: 10px;
     width: 100vw;
     height: 50px;
+    font-family: 'Bungee Shade', cursive;
 }
 
 .Search {
@@ -120,6 +147,18 @@ section {
     opacity: 0.5;
 }
 
+.purchasegrid {
+    display: grid;
+    position: relative;
+    margin:0 auto;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:auto;
+    height: auto;
+    width: 90vw;
+    background-color:rosybrown;
+    margin-bottom: 20px;
+}
+
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -128,7 +167,8 @@ footer {
     height: 223px;
     background-color: black;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    
 }
 dades {
     display: flex;
