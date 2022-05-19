@@ -26,6 +26,14 @@ header {
     margin-bottom: 20px;
     filter: invert(360%);
 }
+.titol{
+    display:block;
+    position:relative;
+    margin-bottom:15px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
 
 .imgLogo:hover {
     cursor: pointer;
@@ -53,7 +61,6 @@ section {
     /* background-color: wheat; */
     width: 100vw;
     height: 100vh;
-    justify-content: center;
 }
 
 section2 {
@@ -74,7 +81,6 @@ section2 {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 .fotosCompra {
     display: block;
     position: relative;
@@ -109,19 +115,11 @@ section2 {
     align-items: center;
 }
 
-.slider-inner {
+.slider-outer {
     position: relative;
     width: 58vw;
     height: auto;
     position: relative;
-}
-
-.slider-inner img {
-    display: none;
-    width: 500px;
-    height: 300px;
-    border: solid 1px;
-    border-radius: 60px;
 }
 
 .slider-inner img {
@@ -143,7 +141,6 @@ section2 {
     margin-top: 20px;
     z-index: 100;
 }
-
 .prev:hover,
 .next:hover {
     opacity: 0.5;
