@@ -26,13 +26,14 @@ header {
     margin-bottom: 20px;
     filter: invert(360%);
 }
-.titol{
-    display:block;
-    position:relative;
-    margin-bottom:15px;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+
+.titol {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .imgLogo:hover {
@@ -81,6 +82,7 @@ section2 {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .fotosCompra {
     display: block;
     position: relative;
@@ -141,6 +143,7 @@ section2 {
     margin-top: 20px;
     z-index: 100;
 }
+
 .prev:hover,
 .next:hover {
     opacity: 0.5;
@@ -226,9 +229,9 @@ li {
 
 .btWhatsapp {
     padding: 5px 25px;
-    border-radius: 50px;
     font-size: 1.4rem;
     margin: 10px;
+    border-radius: 50px;
     background-color: green;
     border: groove;
 }
@@ -244,4 +247,195 @@ li {
 
 .privacitat2 {
     margin: 10px;
+}
+
+@media screen and (max-width: 1444px) {
+    .imgLogo {
+        width: 140px;
+        height: auto;
+    }
+    .fa-solid {
+        padding: 13px;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .imgLogo {
+        width: 120px;
+        height: auto;
+    }
+    .fa-solid {
+        padding: 10px;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1172px) {
+    .imgLogo {
+        width: 130px;
+    }
+    div.logo {
+        width: 13.5vw;
+    }
+    .privacitat {
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width:1138px) {
+    div.logo {
+        width: 26vw;
+    }
+    .imgLogo {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .privacitat {
+        font-size: 0.75rem;
+    }
+    .contacte ul {
+        padding: 8px;
+        font-weight: bolder;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:868px) {
+    .btWhatsapp {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+    .privacitat {
+        font-size: 0.7rem;
+    }
+    .slider-inner img {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:779px) {
+    .privacitat {
+        margin: 18px;
+    }
+    .topnav {
+        font-size: 1.4rem;
+    }
+    iframe.googlemaps {
+        width: 400px;
+    }
+    .btWhatsapp {
+        font-size: 1rem;
+    }
+    .contacte {
+        margin: 0px;
+        justify-content: start;
+    }
+    .Search {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:778px) {
+    footer {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+    .contacte {
+        margin: 0px;
+        width: auto;
+    }
+    .privacitat {
+        font-size: 1.1rem;
+    }
+    .slider-outer {
+        text-align: center;
+    }
+    .container {
+        width: 60%;
+        box-sizing: border-box;
+    }
+    .slider-inner img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:702px) {
+    .container {
+        width: 80vw;
+        text-align: center;
+    }
+    .slider-outer {
+        text-align: center;
+        margin-left: 60px;
+    }
+    .privacitat {
+        font-size: 0.89rem;
+    }
+    .slider-inner img.active {
+        width: 370px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .topnav {
+        font-size: 1.2rem;
+        margin: 1px 0px 15px;
+    }
+    .privacitat {
+        font-size: 0.7rem;
+    }
+    .slider-outer {
+        width: 60vw;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .slider-inner img.active {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .imgLogo {
+        width: 120px;
+        height: 105px;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 5px;
+    }
+    .slider-outer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:521px) {
+    .imgLogo {
+        width: 100px;
+        height: 95px;
+    }
 }
