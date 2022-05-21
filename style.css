@@ -417,6 +417,9 @@ li {
         width: 120px;
         height: 105px;
     }
+    .purchasegrid {
+        margin-top: -180px;
+    }
 }
 
 @media screen and (max-width:545px) {
@@ -426,6 +429,7 @@ li {
         height: auto;
         width: 100%;
         padding: 5px;
+        height: 150px;
     }
     .slider-outer {
         width: 100%;
@@ -437,5 +441,20 @@ li {
     .imgLogo {
         width: 100px;
         height: 95px;
+    }
+}
+
+@media screen and (max-width:438px) {
+    header {
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .imgLogo {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .slider-inner img.active {
+        width: 300px;
+        height: 180px;
     }
 }
